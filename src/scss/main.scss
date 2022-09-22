@@ -1,0 +1,72 @@
+// This is where you can import other stylesheets or write your scss code
+@import "headerfont";
+@import "fontcolor";
+@import "reset";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    .jumbotron {
+        background: url(../images/lidye-1Shk_PkNkNw-unsplash.jpg);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 60%;
+
+        #navi {
+            background: black !important;
+            z-index: 1000;
+            left: 0;
+        }
+    }
+
+    #benny {
+        font-size: 1.5rem;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            background: url(../images/hamburger.svg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    .header-content {
+        position: absolute;
+        top: 15%;
+
+        h1 {
+            font-size: 5rem !important;
+        }
+    }
+
+    #about-us {
+        h2 {
+            font-size: 4rem !important;
+        }
+
+        h3 {
+            font-size: 2rem !important;
+        }
+    }
+
+    #team {
+        background: $color !important;
+
+        h2 {
+            font-size: 4rem !important;
+        }
+    }
+
+    #form {
+        h2 {
+            font-size: 4rem !important;
+        }
+    }
+}
